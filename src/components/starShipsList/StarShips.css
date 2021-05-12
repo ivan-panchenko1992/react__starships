@@ -1,0 +1,11 @@
+.star-ships {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 350px);
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+@media screen(max) {
+  
+}

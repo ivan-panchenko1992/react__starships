@@ -1,14 +1,20 @@
 import React, { Fragment } from 'react';
-import StarShip from '../starShip/StarShip';
+import { PrepearedStarShip } from '../../interfaces';
+import { StarShip } from '../starShip/StarShip';
+import './StarShips.css';
 
-const StarShipsList  = () => {
-  return (
-    {starShips.map(starShip => (
-      <Fragment>
-        <StarShip />
-      </Fragment>
-    ))}
-  )
+interface Props {
+  starShips: PrepearedStarShip[];
 }
 
-export default StarShipsList;
+export const StarShipsList: React.FC<Props> = ({ starShips }) => (
+  <div className="star-ships">
+    {
+      starShips.map((starShip) => (
+        <Fragment key={starShip.id}>
+          <StarShip starShip={starShip} />
+        </Fragment>
+      ))
+    }
+  </div>
+);
