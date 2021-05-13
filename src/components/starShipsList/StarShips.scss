@@ -2,8 +2,8 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 350px);
-  column-gap: 15px;
-  row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 7.5px;
   
 }
 
@@ -22,7 +22,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 200px);
-    column-gap: 15px;
-    row-gap: 10px;
+    column-gap: 5px;
+    row-gap: 7.5px;
   }
 }
