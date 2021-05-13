@@ -44,9 +44,6 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <h1>StarShips:</h1>
-      {isLoading && (
-        <Spinner style={{ width: '3rem', height: '3rem' }} />
-      )}
       {page >= 2 && (
         <Button
           className="button"
@@ -65,7 +62,14 @@ const App: React.FC = () => {
           Next
         </Button>
       )}
-      <StarShipsList starShips={starShips} />
+      {isLoading
+        ? (
+          <div>
+            <Spinner style={{ width: '8rem', height: '8rem' }} />
+          </div>
+        ) : (
+          <StarShipsList starShips={starShips} />
+        )}
     </div>
   );
 };
