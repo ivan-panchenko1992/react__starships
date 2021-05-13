@@ -1,4 +1,10 @@
 .card {
   padding: 10px;
   border: 2px solid red;
+
+  &__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
