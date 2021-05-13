@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Spinner } from 'reactstrap';
+import { Button } from 'reactstrap';
 import getStarShips from './api/starShips';
 import './App.scss';
 import { StarShipsList } from './components/starShipsList/StarShipsList';
@@ -25,19 +25,21 @@ const App: React.FC = () => {
       return result.results;
     })
       .then((starShipsFromServer: StarShipFromServer[]) => {
-        const preperedStarships = starShipsFromServer
-          .map<PrepearedStarShip>((starShip) => ({
-            id: uuidv4(),
-            name: starShip.name,
-            model: starShip.model,
-            starshipClass: starShip.starship_class,
-            hyperdriveRating: starShip.hyperdrive_rating,
-            passengers: starShip.passengers,
-            manufacturer: starShip.manufacturer,
-          }));
+        setTimeout(() => {
+          const preperedStarships = starShipsFromServer
+            .map<PrepearedStarShip>((starShip) => ({
+              id: uuidv4(),
+              name: starShip.name,
+              model: starShip.model,
+              starshipClass: starShip.starship_class,
+              hyperdriveRating: starShip.hyperdrive_rating,
+              passengers: starShip.passengers,
+              manufacturer: starShip.manufacturer,
+            }));
 
-        setStarShips(preperedStarships);
-        setIsLoading(false);
+          setStarShips(preperedStarships);
+          setIsLoading(false);
+        }, 1000);
       });
   }, [page]);
 
@@ -65,7 +67,7 @@ const App: React.FC = () => {
       {isLoading
         ? (
           <div>
-            <Spinner style={{ width: '8rem', height: '8rem' }} />
+            <p>Loading...</p>
           </div>
         ) : (
           <StarShipsList starShips={starShips} />
