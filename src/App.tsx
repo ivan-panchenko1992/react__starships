@@ -41,6 +41,7 @@ const App: React.FC = () => {
       <h1>StarShips:</h1>
       {page >= 2 && (
         <Button
+          className="button"
           type="button"
           onClick={() => setPage((prevPage) => (prevPage - 1))}
         >
@@ -49,6 +50,7 @@ const App: React.FC = () => {
       )}
       {isLastPage && (
         <Button
+          className="button"
           type="button"
           onClick={() => setPage((prevPage) => (prevPage + 1))}
         >
