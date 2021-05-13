@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react__starships/static/css/main.b0dff41e.chunk.css",
+    "main.css": "/react__starships/static/css/main.41602f3d.chunk.css",
     "main.js": "/react__starships/static/js/main.c63bb885.chunk.js",
     "main.js.map": "/react__starships/static/js/main.c63bb885.chunk.js.map",
     "runtime-main.js": "/react__starships/static/js/runtime-main.1feeaa70.js",
@@ -12,14 +12,14 @@
     "static/js/3.450202ab.chunk.js.map": "/react__starships/static/js/3.450202ab.chunk.js.map",
     "index.html": "/react__starships/index.html",
     "static/css/2.800be05e.chunk.css.map": "/react__starships/static/css/2.800be05e.chunk.css.map",
-    "static/css/main.b0dff41e.chunk.css.map": "/react__starships/static/css/main.b0dff41e.chunk.css.map",
+    "static/css/main.41602f3d.chunk.css.map": "/react__starships/static/css/main.41602f3d.chunk.css.map",
     "static/js/2.cd26c08c.chunk.js.LICENSE.txt": "/react__starships/static/js/2.cd26c08c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1feeaa70.js",
     "static/css/2.800be05e.chunk.css",
     "static/js/2.cd26c08c.chunk.js",
-    "static/css/main.b0dff41e.chunk.css",
+    "static/css/main.41602f3d.chunk.css",
     "static/js/main.c63bb885.chunk.js"
   ]
 }
