@@ -26,4 +26,4 @@ TypeScript, React, Reactstrap
 4. Run `npm start` to start the project locally on host `http://localhost:3000`
 
 ## Demo link
- - [DEMO LINK](http://ivan-panchenko1992.github.io/react_people)
+ - [DEMO LINK](http://ivan-panchenko1992.github.io/react__starships)
