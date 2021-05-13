@@ -4,7 +4,7 @@ import {
   CardTitle, CardSubtitle,
 } from 'reactstrap';
 import { PrepearedStarShip } from '../../interfaces';
-import './StarShip.css';
+import './StarShip.scss';
 
 interface Props {
   starShip: PrepearedStarShip;

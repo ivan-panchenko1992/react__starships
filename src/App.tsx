@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Spinner } from 'reactstrap';
 import getStarShips from './api/starShips';
-import './App.css';
+import './App.scss';
 import { StarShipsList } from './components/starShipsList/StarShipsList';
 import { PrepearedStarShip, StarShipFromServer } from './interfaces';
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { PrepearedStarShip } from '../../interfaces';
 import { StarShip } from '../starShip/StarShip';
-import './StarShips.css';
+import './StarShips.scss';
 
 interface Props {
   starShips: PrepearedStarShip[];
